@@ -1,20 +1,24 @@
 #include<stdio.h>
 int main()
 {
-	/* Calculating the area of a triangle with base length and height */
+	/*
+	Yaricapi klavyeden girilen dairenin alani ve çevresini hesaplama	
+	Area and circumference of circle in c program
 	
-	int base_lenght,hight,area;
+	Area = 3.14 * radius * radius.
+	Circumference = 2 * 3.14 * radius.*/
 	
-	printf("Please enter the base lenght of triangle.\n");
-	scanf("%d",&base_lenght);
 	
-	printf("Please enter the hight of triangle.\n");
-	scanf("%d",&hight);
+	float radius,area,circumference;
+	printf("Please enter the radius of circle.");
+	scanf("%f",&radius);
 	
-	area=base_lenght*hight/2;
+	area= 3.14* pow(radius,2);
+	circumference= 2*3.14*radius;
 	
-	printf("area of the triangle is= %d cm",area);
-
+	printf("The area of circle is= %.2f\n",area);
+	printf("The circumference of circle is= %.2f",circumference);
+	
 
 	return 0;
 }
